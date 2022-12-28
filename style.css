@@ -1,0 +1,335 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif, sans-serif;
+}
+
+#main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background-color: #384057;
+    overflow: hidden;
+}
+
+/* ------------------------------- Header START ------------------------ */
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+#header .logo img {
+    width: 60px;
+    height: 60px;
+    margin-right: 1rem;
+    object-fit: cover;
+    filter: invert(1);
+}
+
+#header #nav ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+#header #nav ul a {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: .9rem;
+    font-weight: 500;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+#header #nav ul a:hover {
+    background: #000;
+    color: #fff;
+}
+
+#header .search {
+    z-index: 5;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+}
+
+#header .search i {
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
+    font-weight: 500;
+    padding: 1rem;
+    transition: all 0.3s ease;
+}
+
+#header .search input {
+    width: 200px;
+    height: 10px;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background: none;
+    transition: all 0.3s ease;
+}
+
+#header .search input::placeholder {
+    color: rgb(255, 255, 255);
+    font-size: .9rem;
+    font-weight: 500;
+}
+
+/* ------------------------------- Header END ------------------------ */
+
+/* ------------------------------- Center START ------------------------ */
+
+#content {
+    width: 100%;
+    height: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ------------------------------- Center END ------------------------ */
+
+/* ------------------------------- Center Left START ------------------------ */
+
+#content #left {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 4;
+}
+
+#content #left .center {
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#content #left .center .star {
+    color: rgba(221, 240, 42, 0.804);
+    display: flex;
+    gap: 10px;
+
+}
+
+#content #left .center h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+
+}
+
+#content #left .center h2 {
+    font-size: 2rem;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    
+}
+
+#content #left .center p {
+    font-size: .9rem;
+    font-weight: 500;
+    color: rgb(255, 255, 255);
+    line-height: 1.5rem;
+    
+}
+
+#content #left .center .btn {
+    width: 40%;
+    background-color: #e03e67;
+    border-radius: 5px;
+    color: #fff;
+    padding: 10px 20px;
+    cursor: pointer;
+    white-space: nowrap;
+}
+
+/* ------------------------------- Center Left END ------------------------ */
+
+/* ------------------------------- Center Right START ------------------------ */
+
+#content #right {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+#content #right img {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    width: 700px;
+    height: 450px;
+    z-index: 5;
+    filter: brightness(1.2) saturate(1.2) contrast(1.1);
+    transform: scaleX(-1) rotate(30deg);
+
+}
+/* ------------------------------- Center Right END ------------------------ */
+
+/* ------------------------------- Loader START ------------------------ */
+
+#loaderr {
+    position: absolute;
+    top: -100%;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 10;
+    background-color: #31374b;
+}
+
+#loaderr img {
+    width: 300px;
+    height: 300px;
+    animation: rotate 1s linear infinite;
+    filter: invert(1);
+}
+
+/* ------------------------------- Loader END ------------------------ */
+
+/* ------------------------------- Background START ------------------------ */
+
+#bg-cut {
+    height: 110rem;
+    width: 50rem;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: #cc3259;
+    clip-path: polygon(100% 0, 35% 0, 100% 100%);
+    z-index: 1;
+}
+
+.bg-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 700;
+    z-index: 2;
+    
+}
+
+.bg-text h2 {
+    font-size: 20rem;
+    font-weight: 700;
+    white-space: nowrap;
+    color: rgba(0, 0, 0, 0.192);
+}
+
+/* -------------------------------Background END ------------------------ */
+
+/* -------------------------------Footer START ------------------------ */
+
+#footer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 10vh;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+
+#footer .left,
+#footer .right {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    width: 30%;
+    color: #fff;
+    z-index: 10 !important;
+}
+
+#footer .left .text p {
+    font-size: .9rem;
+    font-weight: 500;
+    color: #fff;
+}
+
+#footer .left .text h2 {
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: #fff;
+}
+
+#footer .left img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+    border-radius: 50%;
+
+}
+
+#footer .link {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    width: 70%;
+    justify-content: left;
+}
+
+#footer .link i {
+    color: rgb(255, 255, 255);
+    font-size: 1.5rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+}
+
+#footer .right i {
+    color: rgb(255, 255, 255);
+    font-size: 4rem;
+    font-weight: 500;
+
+    transition: all 0.3s ease;
+}
+
+#footer .right {
+    justify-content: right;
+}
+
+#footer .right .text {
+    color: rgb(255, 255, 255);
+    font-size: 1.4rem;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+/* -------------------------------Footer END ------------------------ */
