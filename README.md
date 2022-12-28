@@ -7,7 +7,7 @@ This design is created to show interest in UI design and Development.
 ![License](https://img.shields.io/github/license/yashkolte/Airjordan.svg)
 
 
-<img src="./arjordan.gif" />
+<img src="./airjordan.gif" />
 
 ## Project
 
